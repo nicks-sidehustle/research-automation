@@ -1,0 +1,64 @@
+{
+  "research_settings": {
+    "default_depth": "medium",
+    "max_sources_per_query": 10,
+    "research_timeout_minutes": 30,
+    "fact_check_enabled": true,
+    "bias_detection_enabled": true
+  },
+  "content_types": {
+    "blog": {
+      "word_count_range": [1500, 2500],
+      "tone": "informative",
+      "seo_focus": true,
+      "include_statistics": true
+    },
+    "podcast": {
+      "duration_minutes": [20, 45],
+      "style": "conversational",
+      "include_music_cues": true,
+      "segment_structure": true
+    },
+    "video": {
+      "duration_seconds": [300, 900],
+      "include_visual_cues": true,
+      "platform_optimization": "youtube",
+      "engagement_focus": true
+    },
+    "ebook": {
+      "word_count_per_chapter": [3000, 5000],
+      "academic_style": false,
+      "include_exercises": true,
+      "citation_style": "APA"
+    }
+  },
+  "ai_models": {
+    "research_model": "gpt-4o",
+    "content_generation_model": "gpt-4o",
+    "fact_checking_model": "gpt-4o",
+    "temperature_research": 0.3,
+    "temperature_content": 0.6
+  },
+  "output_formats": [
+    "json",
+    "markdown",
+    "pdf",
+    "docx"
+  ],
+  "quality_checks": {
+    "min_sources": 5,
+    "fact_verification": true,
+    "plagiarism_check": false,
+    "readability_score": true
+  },
+  "content_guidelines": {
+    "avoid_topics": [
+      "medical advice",
+      "financial investment advice",
+      "legal counsel"
+    ],
+    "required_disclaimers": true,
+    "citation_requirements": true,
+    "bias_warnings": true
+  }
+}
