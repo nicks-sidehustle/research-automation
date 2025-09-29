@@ -1,0 +1,127 @@
+{
+  "claude_integration": {
+    "use_built_in_agents": true,
+    "cost_optimization": true,
+    "api_replacement": {
+      "openai": false,
+      "anthropic": false,
+      "google_ai": false,
+      "note": "External APIs disabled - using Claude Code built-in capabilities"
+    }
+  },
+  "research_settings": {
+    "default_depth": "medium",
+    "max_sources_per_query": 10,
+    "research_timeout_minutes": 30,
+    "fact_check_enabled": true,
+    "bias_detection_enabled": true,
+    "use_websearch": true,
+    "use_memory_tools": true
+  },
+  "claude_agents": {
+    "research_orchestrator": {
+      "enabled": true,
+      "agent_file": "research-orchestrator.md",
+      "capabilities": [
+        "web_search",
+        "source_analysis",
+        "fact_checking",
+        "synthesis",
+        "report_generation"
+      ],
+      "quality_standards": {
+        "min_sources": 5,
+        "confidence_levels": true,
+        "citation_required": true
+      }
+    },
+    "content_formatter": {
+      "enabled": true,
+      "agent_file": "content-formatter.md",
+      "capabilities": [
+        "blog_generation",
+        "podcast_scripting",
+        "video_scripting",
+        "ebook_formatting",
+        "social_media_content"
+      ],
+      "optimization": {
+        "seo_focused": true,
+        "platform_specific": true,
+        "engagement_optimized": true
+      }
+    }
+  },
+  "content_types": {
+    "blog": {
+      "word_count_range": [1500, 2500],
+      "tone": "informative",
+      "seo_focus": true,
+      "include_statistics": true,
+      "use_claude_agent": true
+    },
+    "podcast": {
+      "duration_minutes": [20, 45],
+      "style": "conversational",
+      "include_music_cues": true,
+      "segment_structure": true,
+      "use_claude_agent": true
+    },
+    "video": {
+      "duration_seconds": [300, 900],
+      "include_visual_cues": true,
+      "platform_optimization": "youtube",
+      "engagement_focus": true,
+      "use_claude_agent": true
+    },
+    "ebook": {
+      "word_count_per_chapter": [3000, 5000],
+      "academic_style": false,
+      "include_exercises": true,
+      "citation_style": "APA",
+      "use_claude_agent": true
+    }
+  },
+  "cost_optimization": {
+    "estimated_monthly_savings": 400,
+    "cost_per_research_session": 0,
+    "external_api_costs_eliminated": [
+      "OpenAI API: $180/month",
+      "Anthropic API: $120/month",
+      "Google AI API: $45/month",
+      "Search APIs: $60/month"
+    ],
+    "claude_code_subscription": "$200/month",
+    "net_monthly_savings": "$205/month"
+  },
+  "quality_improvements": {
+    "context_retention": "Better with unified Claude processing",
+    "consistency": "Improved across all content formats",
+    "reliability": "Higher uptime with fewer integration points",
+    "maintenance": "Reduced complexity with single provider"
+  },
+  "output_formats": [
+    "json",
+    "markdown",
+    "pdf",
+    "docx"
+  ],
+  "workflow_optimization": {
+    "use_task_tool": true,
+    "parallel_processing": false,
+    "batch_operations": true,
+    "cache_research": true
+  },
+  "security_benefits": {
+    "reduced_api_exposure": true,
+    "fewer_vendor_relationships": true,
+    "simplified_key_management": true,
+    "single_point_of_trust": "Claude Code platform"
+  },
+  "feature_flags": {
+    "enable_websearch_integration": true,
+    "enable_memory_persistence": true,
+    "enable_multi_agent_workflows": true,
+    "enable_cost_tracking": true
+  }
+}
