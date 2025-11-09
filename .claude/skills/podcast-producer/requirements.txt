@@ -1,0 +1,11 @@
+# Podcast Producer Skill Dependencies
+
+# Text-to-Speech
+gTTS>=2.5.0
+
+# Audio Processing
+pydub>=0.25.1
+
+# Note: Also requires ffmpeg system package
+# Install with: sudo apt-get install ffmpeg (Ubuntu/Debian)
+#           or: brew install ffmpeg (macOS)
